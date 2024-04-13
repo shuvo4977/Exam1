@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator App</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+    />
+</head>
+
+<body>
+<div class="container mt-4">
+    <h2>Simple Calculator</h2>
+    <form class="mt-4">
+        <div class="row mb-3">
+            <div class="col">
+                <label class="form-label">Number 1:</label>
+                <input
+                    type="number"
+                    class="number-1 form-control border border-secondary-subtle"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter first number"
+                />
+            </div>
+
+            <div class="col">
+                <label class="form-label">Select Operator:</label>
+                <select class="select-operators form-select border border-secondary-subtle" aria-label="Default select example">
+                    <option selected>Select Operator</option>
+                    <option value="+">+ (Addition)</option>
+                    <option value="-">- (Subtraction)</option>
+                    <option value="*">* (Multiplication)</option>
+                    <option value="/">/ (Division)</option>
+                </select>
+            </div>
+
+            <div class="col">
+                <label class="form-label">Number 2:</label>
+                <input
+                    type="number"
+                    class="number-2 form-control border border-secondary-subtle"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter second number"
+                />
+            </div>
+        </div>
+        <button type="button" class="calculate-btn btn btn-primary">Calculate</button>
+    </form>
+
+    <div class="result mt-4 alert alert-danger" role="alert">
+        Please Enter Valid Numbers!
+    </div>
+</div>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+></script>
+<script src="main.js"></script>
+
+
+
+
+
+
+</body>
+</html>
+
